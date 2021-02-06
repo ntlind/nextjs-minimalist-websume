@@ -1,16 +1,24 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+@layer utilities {
+  .text-title-responsive {
+    font-size: clamp(16px, 9vw, 81px);
+    line-height: clamp(16*1.2px, 1.2*9vw, 1.2*81px);
+  }
+  .text-subtitle-responsive {
+    font-size: clamp(12px, 2vw, 18px);;
+    line-height: clamp(12px, 2vw, 18px);;
+  }
+  .border-bottom {
+    border-bottom: 1px solid #000;
+    padding-bottom: 2px
+  }
+  .min-h-90 {
+    min-height: 90vh;
+  }
+  .h-card {
+    height: 30vh;
+  }
 }
