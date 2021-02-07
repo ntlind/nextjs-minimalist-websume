@@ -48,14 +48,16 @@ export default function Home() {
             <div>
               <div class="text-4xl lg:text-5xl mt-4 lg:mt-10">About us</div>
               <p class="text-lightGrayText text-md mt-4 lg:mt-10">
-                My name is Roxanne. I specialize in minimal logo and content
-                design. Condensing information in every aspect enables me to
-                create a strong presence for your brand in the most delicate way
-                possible. I work closely with all my clients updating them
-                regularly during the design process to ensure the best results.
-                Transparency between myself and my clients is key to a
-                successful brand, such as portraying your business values and
-                maintaining clean aesthetics.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Aliquam ut porttitor leo a. Felis bibendum ut tristique et. Nibh
+                ipsum consequat nisl vel pretium.
+                <br />
+                <br />
+                Ut consequat semper viverra nam libero justo laoreet sit amet.
+                Lacinia quis vel eros donec ac. Nunc sed blandit libero volutpat
+                sed. Vitae proin sagittis nisl rhoncus mattis. Accumsan lacus
+                vel facilisis volutpat est.
                 <div class="mt-4 lg:mt-10">
                   <Link href="#" underline="none">
                     <a class="uppercase text-lg text-white font-light border-bottom-white mb-20">
@@ -70,15 +72,15 @@ export default function Home() {
       </div>
       <div class="bg-black">
         <div class="max-w-screen-xl	mx-auto min-h-90 pt-10 lg:px-40 px-6 flex flex-col justify-center align-center text-white">
-          <div class="text-5xl mt-4 lg:mt-10">Our services</div>
-          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-12 mt-10 lg:mt-10">
+          <div class="text-4xl mt-4 lg:mt-10">Our services</div>
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 mt-10 lg:mt-10">
             <InfoCard
-              title="Machine Learning"
+              title="Product Management"
               description="Lorem ipsum dolor sit amet asd asd asd, consectetur adipisicing elit.
           Voluptatibus quia, nulla!"
             />
             <InfoCard
-              title="Machine Learning"
+              title="Data Science"
               description="Lorem ipsum dolor sit amet asd asd asd, consectetur adipisicing elit.
           Voluptatibus quia, nulla!"
             />{" "}
