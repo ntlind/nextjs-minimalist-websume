@@ -8,12 +8,16 @@
     line-height: clamp(16*1.2px, 1.2*9vw, 1.2*81px);
   }
   .text-subtitle-responsive {
-    font-size: clamp(14px, 2vw, 20px);;
-    line-height: clamp(14px, 2vw, 20px);;
+    font-size: clamp(1.125rem, 2vw, 20px);;
+    line-height: clamp(1.125rem, 2vw, 20px);;
   }
   .border-bottom {
     border-bottom: 1px solid #000;
     padding-bottom: 2px
+  }
+  .border-bottom-white {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 2px; 
   }
   .min-h-90 {
     min-height: 90vh;
@@ -27,5 +31,6 @@
   .transform-menuBar {
     transition: transform .3s ease-in-out;
   }
+
 }
 
