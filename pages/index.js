@@ -1,24 +1,10 @@
-import Head from "next/head";
-import Image from "next/image";
-
-import styles from "../styles/Home.module.css";
-
-import Grid from "@material-ui/core/Grid";
 import Link from "@material-ui/core/Link";
 
 import SEO from "../components/SEO.js";
 
 import React from "react";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import IconButton from "@material-ui/core/IconButton";
 import Button from "@material-ui/core/Button";
-import Hidden from "@material-ui/core/Hidden";
-import Drawer from "@material-ui/core/Drawer";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import Menu from "@material-ui/icons/Menu";
-import ListItemText from "@material-ui/core/ListItemText";
+import CloseIcon from "@material-ui/icons/Close";
 
 function Header() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -92,7 +78,7 @@ function Header() {
           </div>
           <div
             class={
-              "fixed bg-white flex flex-col text-right justify-top pt-12 px-10 top-0 right-0 transform-menuBar w-screen z-50 h-full" +
+              "transform fixed bg-white flex flex-col text-right justify-top pt-12   px-10 top-0 right-0 transform-menuBar w-screen z-50 h-full" +
               (navbarOpen ? " flex" : " hidden")
             }
           >
@@ -103,10 +89,10 @@ function Header() {
                 onClick={() => setNavbarOpen(!navbarOpen)}
               >
                 <span class="sr-only">Open menu</span>
-                <img class="h-8 w-auto sm:h-10" src="./menu.png" alt="" />
+                <img class="h-8 w-auto sm:h-10" src="./close-24px.svg" alt="" />
               </button>
             </div>
-            <nav class="flex flex-col space-y-20">
+            <nav class="flex flex-col space-y-16">
               {" "}
               <a
                 href="/"
