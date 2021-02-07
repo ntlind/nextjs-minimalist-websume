@@ -8,8 +8,8 @@
     line-height: clamp(16*1.2px, 1.2*9vw, 1.2*81px);
   }
   .text-subtitle-responsive {
-    font-size: clamp(12px, 2vw, 18px);;
-    line-height: clamp(12px, 2vw, 18px);;
+    font-size: clamp(14px, 2vw, 20px);;
+    line-height: clamp(14px, 2vw, 20px);;
   }
   .border-bottom {
     border-bottom: 1px solid #000;
@@ -21,4 +21,11 @@
   .h-card {
     height: 30vh;
   }
+  .h-appbar {
+    height: 50px;
+  }
+  .transform-menuBar {
+    transition: transform .3s ease-in-out;
+  }
 }
+
