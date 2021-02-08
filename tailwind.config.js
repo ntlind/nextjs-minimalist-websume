@@ -15,7 +15,7 @@ module.exports = {
       black: "#000",
       white: "#fff",
       nearWhite: "#ccc",
-      nearBlack: "#3C4858",
+      nearBlack: "#111111",
       lightGrayBackground: "#F5F7FC",
       eggshell: "#fafafa",
     },

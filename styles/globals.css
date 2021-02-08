@@ -19,18 +19,23 @@
     border-bottom: 1px solid #fff;
     padding-bottom: 2px; 
   }
-  .min-h-90 {
-    min-height: 90vh;
+  .min-h-80 {
+    min-height: 80vh;
   }
   .h-card {
     height: 30vh;
   }
-  .h-appbar {
-    height: 50px;
+  .filter-grayscale {
+    filter: grayscale(80%);
   }
-  .transform-menuBar {
-    transition: transform .3s ease-in-out;
+  @variants responsive {
+   .photo-text {
+      max-width: 560px;
+   }
+   .text-title{
+    font-size: 3rem;
+    line-height: 4rem;
   }
-
+  }
 }
 
