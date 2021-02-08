@@ -37,6 +37,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## TODOs
 
-- Finalize the missing accordian section and Footer
+- Finalize the missing accordion section and Footer
 - Refactor components into their own .js scripts
 - Benchmark performance
