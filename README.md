@@ -40,3 +40,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 - Finalize the missing accordion section and Footer
 - Refactor components into their own .js scripts
 - Benchmark performance
+- Fix favicon
