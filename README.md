@@ -2,9 +2,11 @@
 
 A minimalist website template inspired by [Lustre Studio](https://www.lustrestudio.co/).
 
+![GIF showing the website](https://github.com/ntlind/nextjs-minimalist-template/blob/main/demo.gif)
 
+## Background
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+I fell in love with Lustre Studio's design while looking for inspiration for [Quantile's website](https://www.quantilegroup.com). The clean lines and interesting components seemed worthy of study, so I spent a frozen Chicago weekend reecreating their great work using Next.js, React, and TailwindCSS. 
 
 ## Getting Started
 
@@ -33,8 +35,8 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## TODOs
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Finalize the missing accordian section and Footer
+- Refactor components into their own .js scripts
+- Benchmark performance
