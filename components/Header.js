@@ -1,4 +1,5 @@
 import React from "react";
+import { Link as ScrollLink } from "react-scroll";
 
 export default function Header() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -6,27 +7,30 @@ export default function Header() {
   const rightLinks = (
     <nav class="hidden md:flex space-x-10">
       {" "}
-      <a
-        href="#"
-        class="text-lightGrayText hover:text-black uppercase text-subtitle-responsive font-light"
+      <ScrollLink
+        to="about"
+        smooth={true}
+        duration={800}
+        delay={10}
+        class="text-lightGrayText hover:text-black uppercase text-link-responsive font-light cursor-pointer"
       >
         About
-      </a>
+      </ScrollLink>
       <a
         href="#"
-        class="text-lightGrayText hover:text-black uppercase text-subtitle-responsive font-light"
+        class="text-lightGrayText hover:text-black uppercase text-link-responsive font-light cursor-pointer"
       >
         Services
       </a>
       <a
         href="#"
-        class="text-lightGrayText hover:text-black uppercase text-subtitle-responsive font-light"
+        class="text-lightGrayText hover:text-black uppercase text-link-responsive font-light cursor-pointer"
       >
         Portfolio
       </a>
       <a
         href="#"
-        class="text-lightGrayText hover:text-black uppercase text-subtitle-responsive font-light"
+        class="text-lightGrayText hover:text-black uppercase text-link-responsive font-light cursor-pointer"
       >
         Contact
       </a>
