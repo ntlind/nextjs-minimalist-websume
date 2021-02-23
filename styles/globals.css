@@ -32,6 +32,12 @@
   .filter-grayscale {
     filter: grayscale(80%);
   }
+  .section-header {
+    @apply max-w-screen-xl	mx-auto min-h-90 py-20 lg:px-40 px-6 flex flex-col justify-center
+  }
+  .section {
+    @apply max-w-screen-xl	mx-auto py-20 lg:px-40 px-6 flex flex-col justify-center
+  }
   @variants responsive {
    .photo-text {
       max-width: 560px;
@@ -42,4 +48,3 @@
   }
   }
 }
-
