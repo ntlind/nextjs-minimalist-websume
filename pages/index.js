@@ -24,6 +24,30 @@ function ExperienceCard({ title, company, date, logo }) {
   );
 }
 
+function ProjectCard({ title, description, image_url, link_text }) {
+  return (
+    <div class="flex flex-row my-auto space-x-16">
+      <div class="grid grid-cols-1 gap-6 my-auto mx-6 flex-1">
+        <p class="text-4xl">{title}</p>
+        <p class="text-lightGrayText text-md"> {description}</p>
+        <div class="mt-6">
+          <Link href={image_url} underline="none">
+            <a class="uppercase text-link-responsive text-black font-light border-bottom font-light tracking-wide cursor-pointer">
+              {link_text}
+            </a>
+          </Link>
+        </div>
+      </div>
+      <div class="flex-1">
+        <img
+          src="website_example.png"
+          class="rounded-lg max-h-72 black mx-auto my-auto shadow-xl"
+        />{" "}
+      </div>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <div id="top">
@@ -42,7 +66,7 @@ export default function Home() {
             I design, code, and scale data science <br />
             applications to turn insights into action
           </div>
-          <div class="mt-16">
+          <div class="mt-10">
             <ScrollLink
               to="about"
               smooth={true}
@@ -82,7 +106,7 @@ export default function Home() {
                   <div class="mt-8">
                     <CalendlyLink
                       url="https://calendly.com/quantilegroup/30min"
-                      text="Connect via Calendly"
+                      text="Schedule time to connect"
                     />
                   </div>
                 </p>
@@ -98,7 +122,7 @@ export default function Home() {
               <Fade up duration="800" delay="200" distance="5%">
                 <div class="text-4xl mt-4 xl:mt-10 pb-6">Experience</div>
                 <ExperienceCard
-                  title="Head of Product & Technology"
+                  title="Co-Founder, Product"
                   company="Quantile"
                   date="2020-Present"
                   logo="/experience_logos/quantile.png"
@@ -172,34 +196,24 @@ Voluptatibus quia, nulla!"
           </div>
         </div>
       </div>
-      <div>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:pl-40">
-          <div class="lg:photo-text ml-auto flex flex-col justify-center text-black px-6 lg:px-0 py-8">
-            <Fade up duration="800" delay="200" distance="5%">
-              <div class="text-4xl lg:text-title pr-12">
-                For more selected work, check us out on GitHub.
-              </div>
-            </Fade>
-            <div class="mt-10">
-              <Link href="https://github.com/ntlind" underline="none">
-                <a class="uppercase text-link-responsive text-black font-light border-bottom font-light tracking-wide cursor-pointer">
-                  Click here
-                </a>
-              </Link>
-            </div>
-          </div>
-          <div>
-            <video
-              playsinline
-              autoPlay
-              autoBuffer
-              loop
-              muted
-              class="block object-fill w-full h-full overflow-hidden"
-            >
-              <source src="./video.mp4" type="video/mp4" />
-            </video>
-          </div>
+      <div
+        id="portfolio"
+        class="max-w-screen-xl	mx-auto py-20 lg:px-40 px-6 text-black items-center"
+      >
+        <div class="text-4xl lg:text-title mb-16">Recent Projects</div>
+        <div class="flex flex-col space-y-20">
+          <ProjectCard
+            title="This website"
+            description="Built from scratch using React components on Next.js with Tailwind CSS."
+            image_url="https://github.com/ntlind/nextjs-minimalist-template"
+            link_text="View on GitHub"
+          />
+          <ProjectCard
+            title="This website"
+            description="Built from scratch using React components on Next.js with Tailwind CSS."
+            image_url="https://github.com/ntlind/nextjs-minimalist-template"
+            link_text="View on GitHub"
+          />
         </div>
       </div>
       <div class="bg-nearBlack">
@@ -263,6 +277,36 @@ Voluptatibus quia, nulla!"
                 class="filter-grayscale rounded-lg max-h-16 mx-auto my-auto"
               />
             </Fade>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:pl-40">
+          <div class="lg:photo-text ml-auto flex flex-col justify-center text-black px-6 lg:px-0 py-8">
+            <Fade up duration="800" delay="200" distance="5%">
+              <div class="text-4xl lg:text-title pr-12">
+                For more selected work, check us out on GitHub.
+              </div>
+            </Fade>
+            <div class="mt-10">
+              <Link href="https://github.com/ntlind" underline="none">
+                <a class="uppercase text-link-responsive text-black font-light border-bottom font-light tracking-wide cursor-pointer">
+                  Click here
+                </a>
+              </Link>
+            </div>
+          </div>
+          <div>
+            <video
+              playsinline
+              autoPlay
+              autoBuffer
+              loop
+              muted
+              class="block object-fill w-full h-full overflow-hidden"
+            >
+              <source src="./video.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
       </div>
