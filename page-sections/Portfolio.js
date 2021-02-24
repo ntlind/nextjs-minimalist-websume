@@ -14,9 +14,9 @@ function ProjectCard({
   return (
     <div class="flex flex-row my-auto space-x-12 fade pb-10">
       <Fade up duration="800" delay="200" distance="5%">
-        <div class={"grid grid-cols-1 gap-6 my-auto mx-6 flex-1"}>
+        <div class={"grid grid-cols-1 gap-12 my-auto mx-6 flex-1"}>
           <p class="text-4xl">{title}</p>
-          <p class="text-lightGrayText text-md"> {description}</p>
+          <p class="text-lightGrayText text-md pr-16"> {description}</p>
           <div class="mt-6">
             <Link href={link_url} underline="none">
               <a class="uppercase text-link-responsive text-black font-light border-bottom font-light tracking-wide cursor-pointer">
@@ -28,7 +28,7 @@ function ProjectCard({
         <div class="flex-1">
           <img
             src={image_url}
-            class="rounded-lg max-h-72 black mx-auto my-auto shadow-xl"
+            class="rounded-lg black mx-auto my-auto shadow-xl object-cover"
           />{" "}
         </div>
       </Fade>

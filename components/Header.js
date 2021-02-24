@@ -3,6 +3,20 @@ import { useInView } from "react-intersection-observer";
 
 import { Link as ScrollLink } from "react-scroll";
 
+function ScrollButton({ text, section }) {
+  return (
+    <ScrollLink
+      to={section}
+      smooth={true}
+      duration={800}
+      delay={10}
+      class="text-lightGrayText hover:text-black uppercase text-link-responsive font-light cursor-pointer"
+    >
+      {text}
+    </ScrollLink>
+  );
+}
+
 export default function Header() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
 
@@ -13,34 +27,10 @@ export default function Header() {
 
   const rightLinks = (
     <nav class="hidden md:flex space-x-10">
-      {" "}
-      <ScrollLink
-        to="about"
-        smooth={true}
-        duration={800}
-        delay={10}
-        class="text-lightGrayText hover:text-black uppercase text-link-responsive font-light cursor-pointer"
-      >
-        About
-      </ScrollLink>
-      <a
-        href="#"
-        class="text-lightGrayText hover:text-black uppercase text-link-responsive font-light cursor-pointer"
-      >
-        Services
-      </a>
-      <a
-        href="#"
-        class="text-lightGrayText hover:text-black uppercase text-link-responsive font-light cursor-pointer"
-      >
-        Portfolio
-      </a>
-      <a
-        href="#"
-        class="text-lightGrayText hover:text-black uppercase text-link-responsive font-light cursor-pointer"
-      >
-        Contact
-      </a>
+      <ScrollButton text="About" section="about" />
+      <ScrollButton text="Portfolio" section="portfolio" />
+      <ScrollButton text="Services" section="services" />
+      <ScrollButton text="Contact" section="contact" />
     </nav>
   );
 
