@@ -39,12 +39,12 @@
     @apply max-w-screen-xl	mx-auto py-20 lg:px-40 px-6 flex flex-col justify-center
   }
   .fade {
-    animation: fadeAnimation cubic-bezier(.5, 0, 0, 1) .7s; 
+    animation: fadeAnimation cubic-bezier(.5, 0, 0, 1) .6s; 
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;   
   }
   .header-fade {
-    animation: headerFadeAnimation cubic-bezier(.5, 0, 0, 1) .7s; 
+    animation: headerFadeAnimation cubic-bezier(.5, 0, 0, 1) .6s; 
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;   
   }

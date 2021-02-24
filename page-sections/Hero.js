@@ -7,6 +7,7 @@ export default function Hero() {
   const { ref, inView, entry } = useInView({
     /* Optional options */
     threshold: 0,
+    delay: 150,
   });
 
   return (

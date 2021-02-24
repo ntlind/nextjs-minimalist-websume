@@ -27,8 +27,11 @@ export default function Experience() {
     <div class="bg-nearBlack text-white">
       <div
         id="experience"
+        ref={ref}
         class={
-          "max-w-screen-xl	mx-auto pb-20 lg:px-40 px-6 flex flex-col justify-center fade"
+          inView
+            ? "max-w-screen-xl	mx-auto pb-20 lg:px-40 px-6 flex flex-col justify-center fade"
+            : "invisible"
         }
       >
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
