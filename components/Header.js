@@ -40,7 +40,7 @@ export default function Header() {
   return (
     <div
       ref={ref}
-      class={inView ? "relative bg-white mt-10 header-fade" : "invisible"}
+      class={inView ? "relative bg-white mt-10 header-fade" : "text-white"}
     >
       <div class="max-w-screen-xl mx-auto	lg:px-40 px-6">
         <div class="flex justify-between items-center border-gray-100 py-2 md:justify-start md:space-x-10">

@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "@material-ui/core/Link";
-import Fade from "react-reveal/Fade";
 import { useInView } from "react-intersection-observer";
 
 function ProjectCard({
@@ -11,13 +10,21 @@ function ProjectCard({
   link_text,
   reverse,
 }) {
+  const { ref, inView, entry } = useInView({
+    /* Optional options */
+    threshold: 0,
+  });
   return (
-    <div class="flex flex-row my-auto space-x-12 fade pb-10">
-      <Fade up duration="800" delay="200" distance="5%">
-        <div class={"grid grid-cols-1 gap-12 my-auto mx-6 flex-1"}>
-          <p class="text-4xl">{title}</p>
-          <p class="text-lightGrayText text-md pr-16"> {description}</p>
-          <div class="mt-6">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <div ref={ref} class={inView ? "fade" : "invisible"}>
+        <div
+          class={
+            "grid grid-cols-1 my-auto mx-6 flex-1 text-center lg:text-left"
+          }
+        >
+          <p class="text-4xl py-6">{title}</p>
+          <p class="text-lightGrayText text-md lg:pr-16"> {description}</p>
+          <div class="mt-12">
             <Link href={link_url} underline="none">
               <a class="uppercase text-link-responsive text-black font-light border-bottom font-light tracking-wide cursor-pointer">
                 {link_text}
@@ -25,13 +32,13 @@ function ProjectCard({
             </Link>
           </div>
         </div>
-        <div class="flex-1">
-          <img
-            src={image_url}
-            class="rounded-lg black mx-auto my-auto shadow-xl object-cover"
-          />{" "}
-        </div>
-      </Fade>
+      </div>
+      <div class="flex-1">
+        <img
+          src={image_url}
+          class="rounded-lg black mx-auto my-auto shadow-xl object-cover"
+        />{" "}
+      </div>
     </div>
   );
 }
@@ -40,10 +47,10 @@ export default function Portfolio() {
   return (
     <div
       id="portfolio"
-      class="max-w-screen-xl	mx-auto py-20 lg:px-40 px-6 text-black items-center"
+      class="max-w-screen-xl min-h-screen mx-auto py-20 lg:px-40 px-6 text-black items-center"
     >
       <div class="text-4xl lg:text-title mb-16">Recent Projects</div>
-      <div class="flex flex-col space-y-24">
+      <div class="flex flex-col space-y-36">
         <ProjectCard
           title="anomaly-detection"
           description="An automated anomaly detection library for hierarchical time series."
@@ -53,7 +60,7 @@ export default function Portfolio() {
         />
         <ProjectCard
           title="ForecastFrame"
-          description="A fast and accurate hierarchical timeseries forecasting library for Python."
+          description="A fast, accurate, and interpretable hierarchical timeseries forecasting library."
           image_url="https://s.yimg.com/ny/api/res/1.2/MCBJaot4sCn8x1wTgmhEjg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MA--/https://media.zenfs.com/en/simply_wall_st__316/01d1f05695ab07ad4c1f411240c3afe9"
           link_text="View on GitHub"
           link_url="https://github.com/ntlind/forecastframe"

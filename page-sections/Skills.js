@@ -50,7 +50,7 @@ export default function Skills() {
         }
       >
         {" "}
-        <div class="grid grid-cols-2 gap-24">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
             <div class={"text-4xl mt-4 xl:mt-10 pb-6 fade"}>
               Functional Skills
