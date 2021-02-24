@@ -1,8 +1,15 @@
 import React from "react";
+import { useInView } from "react-intersection-observer";
+
 import { Link as ScrollLink } from "react-scroll";
 
 export default function Header() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
+
+  const { ref, inView, entry } = useInView({
+    /* Optional options */
+    threshold: 0,
+  });
 
   const rightLinks = (
     <nav class="hidden md:flex space-x-10">
@@ -41,7 +48,10 @@ export default function Header() {
     setMobileOpen(!mobileOpen);
   };
   return (
-    <div class="relative bg-white mt-10">
+    <div
+      ref={ref}
+      class={inView ? "relative bg-white mt-10 header-fade" : "invisible"}
+    >
       <div class="max-w-screen-xl mx-auto	lg:px-40 px-6">
         <div class="flex justify-between items-center border-gray-100 py-2 md:justify-start md:space-x-10">
           <div class="flex justify-start lg:w-0 lg:flex-1">
