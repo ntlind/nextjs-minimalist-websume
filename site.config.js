@@ -1,8 +1,8 @@
 export default {
   siteMetadata: {
-    title: "Quantile Group",
+    title: "Nick Lind",
     author: {
-      name: "Quantile Group",
+      name: "Nick Lind",
       summary:
         "Expert machine learning, technical design, and analytics services for when you have to get it right the first time",
     },

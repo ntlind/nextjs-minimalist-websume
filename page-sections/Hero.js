@@ -18,8 +18,7 @@ export default function Hero() {
     >
       <div className="text-title-responsive">Hi, I'm Nick</div>
       <div className="text-subtitle-responsive text-lightGrayText my-6">
-        I design, code, and scale data science <br />
-        applications to turn insights into action
+        I design, code, and scale data science applications
       </div>
       <div class="mt-10">
         <ScrollLink

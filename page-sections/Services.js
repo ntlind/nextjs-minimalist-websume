@@ -50,41 +50,45 @@ export default function Services() {
       <div
         id="services"
         ref={ref}
-        class={"section" + (inView ? " motion-safe:animate-fadeIn" : "")}
+        class={
+          "section" + (inView ? " motion-safe:animate-fadeIn" : "text-black")
+        }
       >
         {" "}
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12">
           <div class="text-4xl lg:text-title">
-            A refined design process for a successful project.
+            Areas of <br /> expertise
           </div>
-          <div class="grid grid-rows-3 gap-6 mt-10 lg:mt-0 mb-20">
+          <div class="grid grid-rows-3 gap-6 mt-10 lg:mt-0">
             <div>
-              <div class="text-2xl">Research</div>
+              <div class="text-2xl">Machine Learning</div>
               <p class="text-lightGrayText text-md mt-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Aliquam ut porttitor leo a.
+                I build accurate, interpretable forecasting engines to
+                understand and predict future events.
               </p>
             </div>
             <div>
-              <div class="text-2xl">Brand Design</div>
+              <div class="text-2xl">Product Management</div>
               <p class="text-lightGrayText text-md mt-4">
-                Felis bibendum ut tristique et. Nibh ipsum consequat nisl vel
-                pretium. Felis bibendum ut tristique et. Nibh ipsum consequat
-                nisl vel pretium.
+                I bridge the gap between executives, users, and engineers to
+                build sustainable software products.
               </p>
             </div>
             <div>
-              <div class="text-2xl">Delivery</div>
+              <div class="text-2xl">Data Science</div>
               <p class="text-lightGrayText text-md mt-4">
-                Felis bibendum ut tristique et. Nibh ipsum consequat nisl vel
-                pretium. Felis bibendum ut tristique et. Nibh ipsum consequat
-                nisl vel pretium.
+                I mine massive distributed datasets to uncover relationships,
+                validate hypotheses, and share stories.
               </p>
             </div>
           </div>
         </div>
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-16">
+      </div>
+    </div>
+  );
+}
+{
+  /* <div class="grid grid-cols-2 lg:grid-cols-4 gap-16">
           <img
             src="/tech_logos/python.png"
             class="filter-grayscale rounded-lg max-h-16 mx-auto my-auto"
@@ -101,8 +105,5 @@ export default function Services() {
             src="/tech_logos/partner_logo_gcp.png"
             class="filter-grayscale rounded-lg max-h-16 mx-auto my-auto"
           />
-        </div>
-      </div>
-    </div>
-  );
+        </div> */
 }

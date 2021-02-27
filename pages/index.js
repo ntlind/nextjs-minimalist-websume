@@ -1,7 +1,4 @@
 import React from "react";
-import Link from "@material-ui/core/Link";
-import Fade from "react-reveal/Fade";
-import { useInView } from "react-intersection-observer";
 
 import SEO from "../components/SEO.js";
 import Header from "../components/Header.js";
@@ -19,16 +16,16 @@ export default function Home() {
   return (
     <div id="top">
       <SEO
-        title="Nick Lind"
-        description="Analytics and data science consulting for companies of all sizes"
+        title="Home"
+        description="Personal page for Nick Lind, and analytics and machine learning consultant"
       />
       <Header />
       <Hero />
       <About />
       <Experience />
-      <Skills />
       <Portfolio />
       <Services />
+      <Skills />
       <VideoBar />
     </div>
   );
