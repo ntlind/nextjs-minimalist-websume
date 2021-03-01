@@ -1,6 +1,7 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 
+import Experience from "../page-sections/Experience.js";
 import CalendlyLink from "../components/CalendlyLink.js";
 
 export default function About() {
@@ -32,13 +33,15 @@ export default function About() {
               <div class="mt-8">
                 <CalendlyLink
                   url="https://calendly.com/quantilegroup/30min"
-                  text="Schedule time to connect"
+                  text="Connect with Nick"
+                  class_style="uppercase text-lg text-white font-light border-bottom-white mb-20 font-light tracking-wide cursor-pointer"
                 />
               </div>
             </p>
           </div>
         </div>
       </div>
+      <Experience />
     </div>
   );
 }

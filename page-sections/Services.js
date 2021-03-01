@@ -1,6 +1,8 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 
+import Skills from "../page-sections/Skills.js";
+
 function InfoCard({ title, description, tags }) {
   return (
     <div class="bg-gray rounded">
@@ -55,7 +57,7 @@ export default function Services() {
         }
       >
         {" "}
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg: gap-12">
           <div class="text-4xl lg:text-title">
             Areas of <br /> expertise
           </div>
@@ -84,26 +86,7 @@ export default function Services() {
           </div>
         </div>
       </div>
+      <Skills />
     </div>
   );
-}
-{
-  /* <div class="grid grid-cols-2 lg:grid-cols-4 gap-16">
-          <img
-            src="/tech_logos/python.png"
-            class="filter-grayscale rounded-lg max-h-16 mx-auto my-auto"
-          />
-          <img
-            src="/tech_logos/js.png"
-            class="filter-grayscale rounded-lg max-h-16 mx-auto my-auto"
-          />
-          <img
-            src="/tech_logos/partner_logo_aws.png"
-            class="filter-grayscale rounded-lg max-h-16 mx-auto my-auto"
-          />
-          <img
-            src="/tech_logos/partner_logo_gcp.png"
-            class="filter-grayscale rounded-lg max-h-16 mx-auto my-auto"
-          />
-        </div> */
 }

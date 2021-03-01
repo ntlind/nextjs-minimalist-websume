@@ -9,22 +9,31 @@ export default function VideoBar() {
   });
 
   return (
-    <div id="video">
+    <div id="contact">
       {" "}
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:pl-40">
         <div
           class={
-            "lg:photo-text ml-auto flex flex-col justify-center text-black px-6 lg:px-0 py-8" +
+            "lg:photo-text flex flex-col justify-center text-black px-6 lg:px-0 py-8 lg:py-24" +
             (inView ? " motion-safe:animate-fadeIn" : "")
           }
         >
-          <div class="text-4xl lg:text-title pr-12">
-            For more selected work, check us out on GitHub.
+          <div class="text-4xl lg:text-title pr-12">Contact</div>
+          <div class="mt-12">
+            <Link
+              href="mailto:nthorlind@gmail.com"
+              underline="none"
+              target="_blank"
+            >
+              <span class="uppercase text-link-responsive text-black font-light border-bottom font-light tracking-wide cursor-pointer">
+                nthorlind@gmail.com
+              </span>
+            </Link>
           </div>
-          <div class="mt-10">
+          <div class="mt-8">
             <Link href="https://github.com/ntlind" underline="none">
               <a class="uppercase text-link-responsive text-black font-light border-bottom font-light tracking-wide cursor-pointer">
-                Click here
+                Calendly
               </a>
             </Link>
           </div>

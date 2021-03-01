@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 
 function ExperienceCard({ title, company, date, logo }) {
   return (
-    <div class="grid grid-cols-5 gap-8 bg-transparent py-4 lg:py-6">
+    <div class="grid grid-cols-5 gap-4 bg-transparent py-4">
       <div class="col-span-1  flex flex-wrap content-center">
         <img src={logo} class="rounded-lg max-h-16 black mx-auto my-auto" />
       </div>

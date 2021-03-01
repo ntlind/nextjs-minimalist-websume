@@ -45,12 +45,9 @@ function ProjectCard({
 
 export default function Portfolio() {
   return (
-    <div
-      id="portfolio"
-      class="max-w-screen-xl min-h-screen mx-auto py-20 lg:px-40 px-6 text-black items-center"
-    >
+    <div id="portfolio" class="section">
       <div class="text-4xl lg:text-title mb-16">Recent Projects</div>
-      <div class="flex flex-col space-y-36">
+      <div class="flex flex-col space-y-24">
         <ProjectCard
           title="anomaly-detection"
           description="An automated anomaly detection library for hierarchical time series."

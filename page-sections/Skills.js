@@ -10,7 +10,7 @@ const BorderLinearProgress = withStyles((theme) => ({
     borderRadius: 10,
   },
   colorPrimary: {
-    backgroundColor: "#ffffff",
+    backgroundColor: "white",
   },
   bar: {
     borderRadius: 5,
@@ -20,12 +20,15 @@ const BorderLinearProgress = withStyles((theme) => ({
 
 function SkillCard({ title, progress }) {
   return (
-    <div class="grid grid-cols-4 gap-8 bg-transparent py-4 lg:py-6">
-      <div class="col-span-2  flex flex-wrap content-center">
+    <div class="grid grid-cols-6 gap-6 bg-transparent py-3">
+      <div class="col-span-3  flex flex-wrap content-center">
         <div class="text-lg">{title}</div>
       </div>
       <div class="col-span-2 flex flex-col justify-center">
         <BorderLinearProgress variant="determinate" value={progress} />
+      </div>
+      <div class="col-span-1 flex flex-col justify-center font-light text-lightGrayText text-sm">
+        {progress}%
       </div>
     </div>
   );
@@ -56,9 +59,8 @@ export default function Skills() {
         id="skills"
         ref={ref}
         class={
-          inView
-            ? "max-w-screen-xl	mx-auto pb-20 lg:px-40 px-6 flex flex-col justify-center fade"
-            : "invisible"
+          "max-w-screen-xl	mx-auto pb-20 lg:px-40 px-6 flex flex-col justify-center" +
+          (inView ? " fade" : "text-black")
         }
       >
         {" "}
@@ -68,16 +70,16 @@ export default function Skills() {
             <SkillCard title="Python" progress="90" />
             <SkillCard title="SQL" progress="90" />
             <SkillCard title="Julia" progress="80" />
-            <SkillCard title="Scala" progress="60" />
-            <SkillCard title="JavaScript, HTML, CSS" progress="50" />
+            <SkillCard title="Scala" progress="70" />
+            <SkillCard title="JavaScript, HTML, CSS" progress="65" />
           </div>
           <div>
-            <div class={"text-4xl mt-4 xl:mt-10 pb-6 fade"}>Frameworks</div>
+            <div class={"text-4xl pb-6 fade"}>Databases & Tools</div>
             <SkillCard title="Spark" progress="90" />
-            <SkillCard title="mxnet" progress="80" />
-            <SkillCard title="GCP, AWS, & Azure" progress="70" />
-            <SkillCard title="PyTorch" progress="60" />
-            <SkillCard title="" progress="50" />
+            <SkillCard title="PostgresSQL" progress="80" />
+            <SkillCard title="GCP, AWS, & Azure" progress="75" />
+            <SkillCard title="MongoDB" progress="65" />
+            <SkillCard title="React.js" progress="60" />
           </div>
         </div>
       </div>
