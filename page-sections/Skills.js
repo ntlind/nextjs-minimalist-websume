@@ -74,11 +74,11 @@ export default function Skills() {
             <SkillCard title="JavaScript, HTML, CSS" progress="65" />
           </div>
           <div>
-            <div class={"text-4xl pb-6 fade"}>Databases & Tools</div>
+            <div class={"text-4xl pb-6 fade"}>Frameworks & Tools</div>
             <SkillCard title="Spark" progress="90" />
-            <SkillCard title="PostgresSQL" progress="80" />
+            <SkillCard title="PyTorch" progress="80" />
             <SkillCard title="GCP, AWS, & Azure" progress="75" />
-            <SkillCard title="MongoDB" progress="65" />
+            <SkillCard title="Docker" progress="65" />
             <SkillCard title="React.js" progress="60" />
           </div>
         </div>
