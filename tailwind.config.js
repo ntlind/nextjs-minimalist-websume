@@ -1,10 +1,5 @@
 module.exports = {
-  purge: {
-    content: ["./src/**/*.html", "./src/**/*.jsx"],
-    options: {
-      whitelist: ["fade"],
-    },
-  },
+  purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
