@@ -14,7 +14,7 @@ export default function Hero() {
     <div
       id="header"
       ref={ref}
-      class={inView ? "section-header fade" : "invisible"}
+      class={inView ? "section-header fade" : "section-header invisible"}
     >
       <div className="text-title-responsive">Hi, I'm Nick</div>
       <div className="text-subtitle-responsive text-lightGrayText my-6">

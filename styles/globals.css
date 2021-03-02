@@ -43,26 +43,16 @@
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;   
   }
-  .header-fade {
-    animation: headerFadeAnimation cubic-bezier(.5, 0, 0, 1) .6s; 
-    animation-iteration-count: 1; 
-    animation-fill-mode: forwards;   
-  }
+  
   @keyframes fadeAnimation { 
     0% { 
         opacity: 0; 
-        transform: translateY(20px) 
+        transform: translateY(50px) 
     } 
-    100% { 
-        opacity: 1; 
-        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1),
-     } 
-  } 
-  @keyframes headerFadeAnimation { 
-    0% { 
-        opacity: 0; 
-        transform: translateY(60px) 
-    } 
+    33% { 
+      opacity: 0; 
+      transform: translateY(50px) 
+    }
     100% { 
         opacity: 1; 
         transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1),
@@ -70,7 +60,7 @@
   } 
   @variants responsive {
    .photo-text {
-      max-width: 560px;
+      width: 560px;
    }
    .text-title{
     font-size: 3rem;

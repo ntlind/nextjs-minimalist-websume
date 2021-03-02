@@ -6,7 +6,7 @@ import { makeStyles, withStyles } from "@material-ui/core/styles";
 
 const BorderLinearProgress = withStyles((theme) => ({
   root: {
-    height: 8,
+    height: 10,
     borderRadius: 10,
   },
   colorPrimary: {
@@ -20,16 +20,16 @@ const BorderLinearProgress = withStyles((theme) => ({
 
 function SkillCard({ title, progress }) {
   return (
-    <div class="grid grid-cols-6 gap-6 bg-transparent py-3">
-      <div class="col-span-3  flex flex-wrap content-center">
+    <div class="grid grid-cols-4 gap-6 bg-transparent py-3">
+      <div class="col-span-2  flex flex-wrap content-center">
         <div class="text-lg">{title}</div>
       </div>
       <div class="col-span-2 flex flex-col justify-center">
         <BorderLinearProgress variant="determinate" value={progress} />
       </div>
-      <div class="col-span-1 flex flex-col justify-center font-light text-lightGrayText text-sm">
+      {/* <div class="col-span-1 flex flex-col justify-center font-light text-lightGrayText text-sm">
         {progress}%
-      </div>
+      </div> */}
     </div>
   );
 }
@@ -59,26 +59,27 @@ export default function Skills() {
         id="skills"
         ref={ref}
         class={
-          "max-w-screen-xl	mx-auto pb-20 lg:px-40 px-6 flex flex-col justify-center" +
-          (inView ? " fade" : "text-black")
+          inView
+            ? "max-w-screen-xl	mx-auto pb-20 lg:px-40 px-6 flex flex-col justify-center fade"
+            : "max-w-screen-xl	mx-auto pb-20 lg:px-40 px-6 flex flex-col justify-center invisible"
         }
       >
         {" "}
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg: gap-12 mt-4 xl:mt-10">
           <div>
             <div class={"text-4xl pb-6 fade"}>Languages</div>
-            <SkillCard title="Python" progress="90" />
-            <SkillCard title="SQL" progress="90" />
+            <SkillCard title="Python" progress="100" />
+            <SkillCard title="SQL" progress="95" />
             <SkillCard title="Julia" progress="80" />
             <SkillCard title="Scala" progress="70" />
-            <SkillCard title="JavaScript, HTML, CSS" progress="65" />
+            <SkillCard title="JavaScript, HTML, CSS" progress="60" />
           </div>
           <div>
             <div class={"text-4xl pb-6 fade"}>Frameworks & Tools</div>
-            <SkillCard title="Spark" progress="90" />
+            <SkillCard title="Spark" progress="96" />
             <SkillCard title="PyTorch" progress="80" />
-            <SkillCard title="GCP, AWS, & Azure" progress="75" />
-            <SkillCard title="Docker" progress="65" />
+            <SkillCard title="GCP, AWS, & Azure" progress="80" />
+            <SkillCard title="Docker" progress="60" />
             <SkillCard title="React.js" progress="60" />
           </div>
         </div>

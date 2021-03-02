@@ -8,6 +8,7 @@ import About from "../page-sections/About.js";
 import Portfolio from "../page-sections/Portfolio.js";
 import Services from "../page-sections/Services.js";
 import Contact from "../page-sections/Contact.js";
+import Footer from "../page-sections/Footer.js";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Portfolio />
       <Services />
       <Contact />
+      <Footer />
     </div>
   );
 }

@@ -30,8 +30,8 @@ export default function Experience() {
         ref={ref}
         class={
           inView
-            ? "max-w-screen-xl	mx-auto pb-20 lg:px-40 px-6 flex flex-col justify-center fade"
-            : "invisible"
+            ? "max-w-screen-xl mx-auto pb-20 lg:px-40 px-6 flex flex-col justify-center fade"
+            : "max-w-screen-xl mx-auto pb-20 lg:px-40 px-6 flex flex-col justify-center invisible"
         }
       >
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg: gap-12 mt-4 xl:mt-10">

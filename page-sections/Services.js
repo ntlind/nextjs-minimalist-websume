@@ -52,9 +52,7 @@ export default function Services() {
       <div
         id="services"
         ref={ref}
-        class={
-          "section" + (inView ? " motion-safe:animate-fadeIn" : "text-black")
-        }
+        class={inView ? "section fade" : "section invisible"}
       >
         {" "}
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg: gap-12">
