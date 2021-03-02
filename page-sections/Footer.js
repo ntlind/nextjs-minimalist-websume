@@ -3,24 +3,32 @@ import { useInView } from "react-intersection-observer";
 import { FaGithub } from "react-icons/fa";
 
 export default function Footer() {
+  const { ref, inView, entry } = useInView({
+    /* Optional options */
+    threshold: 0,
+  });
+
   return (
     <div class="bg-nearBlack text-white">
       <div
         id="footer"
+        ref={ref}
         class={
-          "max-w-screen-xl	mx-auto h-16 lg:px-40 px-6 flex flex-col justify-center fade"
+          inView
+            ? "max-w-screen-xl	mx-auto h-16 lg:px-40 px-6 flex flex-col justify-center fade"
+            : "section invisible"
         }
       >
-        <div class="flex justify-between font-thin uppercase text-sm">
+        <div class="flex justify-between">
           <div>
             <a
               href="https://github.com/ntlind/nextjs-minimalist-websume"
               target="_blank"
             >
-              Source
+              <FaGithub size={20} />
             </a>
           </div>
-          <div>© 2021 Nick Lind</div>
+          <div>© 2020 Nick Lind</div>
         </div>
       </div>
     </div>

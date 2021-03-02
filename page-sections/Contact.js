@@ -19,7 +19,7 @@ export default function VideoBar() {
   return (
     <div id="contact">
       {" "}
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:pl-40 min-h-70">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:pl-40">
         <div
           ref={ref}
           class={
