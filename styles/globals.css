@@ -8,8 +8,8 @@
     line-height: clamp(16*1.2px, 1.2*9vw, 1.2*81px);
   }
   .text-subtitle-responsive {
-    font-size: clamp(12px, 3.5vw, 24px);;
-    line-height: clamp(12px, 1.2*3.5vw, 1.2*24px);;
+    font-size: clamp(14px, 3.5vw, 24px);;
+    line-height: clamp(1.1*14px, 1.2*3.5vw, 1.2*24px);;
   }
   .text-link-responsive {
     font-size: clamp(1.125rem, 2vw, 20px);;
