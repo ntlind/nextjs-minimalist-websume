@@ -1,6 +1,6 @@
 module.exports = {
   purge: {
-    content: ["./src/**/*.jsx", "./src/**/*.js"],
+    content: ["./src/**/*.html", "./src/**/*.js"],
     options: {
       whitelist: ["fade"],
     },
