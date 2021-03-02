@@ -72,7 +72,7 @@ export default function Portfolio() {
         <ProjectCard
           title="This website"
           description="Built from scratch using React components on Next.js with Tailwind CSS."
-          link_url="https://github.com/ntlind/nextjs-minimalist-template"
+          link_url="https://github.com/ntlind/nextjs-minimalist-websume"
           link_text="View on GitHub"
           image_url="website_example.png"
         />

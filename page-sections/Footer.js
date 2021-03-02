@@ -21,7 +21,10 @@ export default function Footer() {
       >
         <div class="flex justify-between">
           <div>
-            <a href="https://github.com/ntlind" target="_blank">
+            <a
+              href="https://github.com/ntlind/nextjs-minimalist-websume"
+              target="_blank"
+            >
               <FaGithub size={20} />
             </a>
           </div>

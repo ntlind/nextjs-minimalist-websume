@@ -1,8 +1,6 @@
-## Next.js Minimalist Template
+## Next.js Minimalist Websume
 
 A minimalist website template inspired by [Lustre Studio](https://www.lustrestudio.co/).
-
-![GIF showing the website](https://github.com/ntlind/nextjs-minimalist-template/blob/main/demo.gif)
 
 ## Background
 
@@ -10,7 +8,12 @@ I fell in love with Lustre Studio's design while looking for inspiration for [Qu
 
 ## Getting Started
 
-First, run the development server:
+First, install this repository using:
+```bash
+$ git clone https://github.com/ntlind/nextjs-minimalist-websume
+```
+
+Next, run the development server:
 
 ```bash
 npm run dev
@@ -34,10 +37,3 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## TODOs
-
-- Finalize the missing accordion section and Footer
-- Refactor components into their own .js scripts
-- Benchmark performance
-- Fix favicon
