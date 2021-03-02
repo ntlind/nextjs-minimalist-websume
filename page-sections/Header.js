@@ -2,8 +2,6 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 
 import Drawer from "@material-ui/core/Drawer";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
 
 import { Link as ScrollLink } from "react-scroll";
 
@@ -56,7 +54,7 @@ export default function Header() {
           <div class="flex justify-start lg:w-0 lg:flex-1">
             <a href="#">
               <span class="sr-only">Logo</span>
-              <img class="h-4 w-auto sm:h-6" src="./black.svg" alt="" />
+              <img class="h-6 w-auto" src="./black.svg" alt="" />
             </a>
           </div>
           <button type="button" className="md:hidden" onClick={handleClick}>

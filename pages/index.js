@@ -1,8 +1,8 @@
 import React from "react";
 
 import SEO from "../components/SEO.js";
-import Header from "../components/Header.js";
 
+import Header from "../page-sections/Header.js";
 import Hero from "../page-sections/Hero.js";
 import About from "../page-sections/About.js";
 import Portfolio from "../page-sections/Portfolio.js";
