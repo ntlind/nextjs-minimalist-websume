@@ -65,7 +65,7 @@ export default function Portfolio() {
         <ProjectCard
           title="Next.js Landing Blog"
           description="A full Next.js landing page and blog built using Material UI's components."
-          image_url="https://github.com/quantilegroup/nextjs-landing-page/raw/main/public/images/blog_example.gif?raw=true"
+          image_url="./blog_example.webp"
           link_text="View on GitHub"
           link_url="https://github.com/ntlind/nextjs-react-landing-blog"
         />
@@ -74,7 +74,7 @@ export default function Portfolio() {
           description="Built from scratch using React components on Next.js with Tailwind CSS."
           link_url="https://github.com/ntlind/nextjs-minimalist-websume"
           link_text="View on GitHub"
-          image_url="website_example.png"
+          image_url="website_example.webp"
         />
       </div>
     </div>

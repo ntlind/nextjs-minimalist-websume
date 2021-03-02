@@ -41,31 +41,31 @@ export default function Experience() {
               title="Co-Founder, Product"
               company="Quantile"
               date="2020-Present"
-              logo="/experience_logos/quantile.png"
+              logo="/experience_logos/quantile.webp"
             />
             <ExperienceCard
               title="Engagement Manager"
               company="Monitor Deloitte"
               date="2018-2020"
-              logo="/experience_logos/deloitte.jpg"
+              logo="/experience_logos/deloitte.webp"
             />
             <ExperienceCard
               title="Senior Data Scientist"
               company="IBM"
               date="2017-2017"
-              logo="/experience_logos/ibm.png"
+              logo="/experience_logos/ibm.webp"
             />
             <ExperienceCard
               title="Consultant"
               company="Deloitte Consulting"
               date="2013-2016"
-              logo="/experience_logos/deloitte.jpg"
+              logo="/experience_logos/deloitte.webp"
             />
             <ExperienceCard
               title="Econometrics Tutor"
               company="University of Colorado"
               date="2011-2013"
-              logo="/experience_logos/cu.png"
+              logo="/experience_logos/cu.webp"
             />
           </div>
           <div>
@@ -74,13 +74,13 @@ export default function Experience() {
               title="MBA, Strategy & Statistics"
               company="The Wharton School"
               date="2016-2018"
-              logo="/experience_logos/wharton.png"
+              logo="/experience_logos/wharton.webp"
             />{" "}
             <ExperienceCard
               title="BA, Math & Econometrics"
               company="University of Colorado"
               date="2011-2013"
-              logo="/experience_logos/cu.png"
+              logo="/experience_logos/cu.webp"
             />
           </div>
         </div>

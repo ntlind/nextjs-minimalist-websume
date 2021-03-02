@@ -15,7 +15,7 @@ export default function About() {
       <div id="about" class="section">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12">
           <img
-            src="bio.png"
+            src="bio.webp"
             class={"rounded-lg max-h-96 lg:max-h-full black mx-auto my-auto"}
           />
           <div ref={ref} class={inView ? "fade" : "invisible"}>
