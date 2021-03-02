@@ -1,4 +1,6 @@
 import "../styles/globals.css";
+import "tailwindcss/tailwind.css";
+
 import { ThemeProvider } from "@material-ui/core/styles";
 
 function MyApp({ Component, pageProps }) {
