@@ -67,20 +67,20 @@ export default function Skills() {
         {" "}
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg: gap-12 mt-4 xl:mt-10">
           <div>
-            <div class={"text-4xl pb-6 fade"}>Languages</div>
+            <div class={"text-4xl pb-6 fade"}>Back-End & ML</div>
             <SkillCard title="Python" progress="100" />
+            <SkillCard title="Spark" progress="96" />
             <SkillCard title="SQL" progress="95" />
-            <SkillCard title="Julia" progress="80" />
-            <SkillCard title="Scala" progress="70" />
-            <SkillCard title="JavaScript, HTML, CSS" progress="60" />
+            <SkillCard title="Scala" progress="75" />
+            <SkillCard title="GCP, AWS, and Azure" progress="68" />
           </div>
           <div>
-            <div class={"text-4xl pb-6 fade"}>Frameworks & Tools</div>
-            <SkillCard title="Spark" progress="96" />
-            <SkillCard title="PyTorch" progress="80" />
-            <SkillCard title="GCP, AWS, & Azure" progress="80" />
-            <SkillCard title="Docker" progress="60" />
-            <SkillCard title="React.js" progress="60" />
+            <div class={"text-4xl pb-6 fade"}>Front-End</div>
+            <SkillCard title="Django" progress="90" />
+            <SkillCard title="HTML + CSS" progress="80" />
+            <SkillCard title="React.js" progress="70" />
+            <SkillCard title="Celery + RPC" progress="70" />
+            <SkillCard title="jQuery" progress="60" />
           </div>
         </div>
       </div>

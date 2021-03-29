@@ -45,16 +45,15 @@ export default function Header() {
       ref={ref}
       class={
         inView
-          ? "relative bg-white mt-10 fade"
-          : "relative bg-white mt-10 invisible"
+          ? "relative bg-white mt-10 md:fade"
+          : "relative bg-white mt-10 md:invisible"
       }
     >
       <div class="max-w-screen-xl mx-auto	lg:px-40 px-6">
         <div class="flex justify-between items-center border-gray-100 py-2 md:justify-start md:space-x-10">
           <div class="flex justify-start lg:w-0 lg:flex-1">
             <a href="#">
-              <span class="sr-only">Logo</span>
-              <img class="h-6 w-auto" src="./black.svg" alt="" />
+              <span class="text-3xl font-light">nick lind</span>
             </a>
           </div>
           <button type="button" className="md:hidden" onClick={handleClick}>
@@ -114,14 +113,6 @@ export default function Header() {
               Contact
             </a>
           </Drawer>
-          {/* <div
-            class={
-              "text-left top-16 flex-grow md:hidden z-50" +
-              (navbarOpen ? " " : " hidden")
-            }
-          >
-            
-          </div> */}
           {rightLinks}
         </div>
       </div>

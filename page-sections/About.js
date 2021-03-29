@@ -23,9 +23,9 @@ export default function About() {
             <p class="text-lightGrayText text-md mt-4 xl:mt-10">
               Data science leader and full-stack engineer focused on driving
               growth through actionable, interpretable analytics. 7+ years of
-              experience across the retail, consumer packaged goods, and fintech
-              sectors. Believes in using the right tools for the job, but loves
-              to build in Python, Scala, and JavaScript (mostly React).
+              experience across the Retail, CPG, and Healthcare sectors.
+              Believes in using the right tools for the job, but loves to build
+              in React, Python, and Julia.
               <br />
               <br />
               Off-road motorcyclist, rugby enthusiast, CodeLabs mentor, and dog
@@ -33,7 +33,7 @@ export default function About() {
               <div class="mt-8">
                 <CalendlyLink
                   url="https://calendly.com/quantilegroup/30min"
-                  text="Connect with Nick"
+                  text="Schedule meeting"
                   class_style="uppercase text-lg text-white font-light border-bottom-white mb-20 font-light tracking-wide cursor-pointer"
                 />
               </div>

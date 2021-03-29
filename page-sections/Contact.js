@@ -62,7 +62,7 @@ export default function VideoBar() {
             autoBuffer
             loop
             muted
-            class="block object-fill w-full h-full overflow-hidden"
+            class="block object-cover w-full h-full overflow-hidden"
           >
             <source src="./video.mp4" type="video/mp4" />
           </video>
