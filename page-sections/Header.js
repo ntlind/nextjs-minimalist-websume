@@ -53,7 +53,7 @@ export default function Header() {
         <div class="flex justify-between items-center border-gray-100 py-2 md:justify-start md:space-x-10">
           <div class="flex justify-start lg:w-0 lg:flex-1">
             <a href="#">
-              <span class="text-3xl font-light">nick lind</span>
+              <span class="text-3xl font-medium">nick lind</span>
             </a>
           </div>
           <button type="button" className="md:hidden" onClick={handleClick}>
