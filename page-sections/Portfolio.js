@@ -15,28 +15,28 @@ function ProjectCard({
     threshold: 0,
   });
   return (
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-      <div ref={ref} class={inView ? "fade" : "invisible"}>
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <div ref={ref} className={inView ? "fade" : "invisible"}>
         <div
-          class={
+          className={
             "grid grid-cols-1 my-auto mx-6 flex-1 text-center lg:text-left"
           }
         >
-          <p class="text-4xl py-6">{title}</p>
-          <p class="text-lightGrayText text-md lg:pr-16"> {description}</p>
-          <div class="mt-12">
+          <p className="text-4xl py-6">{title}</p>
+          <p className="text-lightGrayText text-md lg:pr-16"> {description}</p>
+          <div className="mt-12">
             <Link href={link_url} underline="none">
-              <a class="uppercase text-link-responsive text-black font-light border-bottom font-light tracking-wide cursor-pointer">
+              <a className="uppercase text-link-responsive text-black font-light border-bottom font-light tracking-wide cursor-pointer">
                 {link_text}
               </a>
             </Link>
           </div>
         </div>
       </div>
-      <div class="flex-1">
+      <div className="flex-1">
         <img
           src={image_url}
-          class="rounded-lg black mx-auto my-auto shadow-xl object-cover"
+          className="rounded-lg black mx-auto my-auto shadow-xl object-cover"
         />{" "}
       </div>
     </div>
@@ -45,9 +45,9 @@ function ProjectCard({
 
 export default function Portfolio() {
   return (
-    <div id="portfolio" class="section">
-      <div class="text-4xl lg:text-title mb-16">Recent Projects</div>
-      <div class="flex flex-col space-y-24">
+    <div id="portfolio" className="section">
+      <div className="text-4xl lg:text-title mb-16">Recent Projects</div>
+      <div className="flex flex-col space-y-24">
         <ProjectCard
           title="anomaly-detection"
           description="An automated anomaly detection library for hierarchical time series."

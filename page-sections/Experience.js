@@ -3,13 +3,13 @@ import { useInView } from "react-intersection-observer";
 
 function ExperienceCard({ title, company, date, logo }) {
   return (
-    <div class="grid grid-cols-5 gap-4 bg-transparent py-4">
-      <div class="col-span-1  flex flex-wrap content-center">
-        <img src={logo} class="rounded-lg max-h-16 black mx-auto my-auto" />
+    <div className="grid grid-cols-5 gap-4 bg-transparent py-4">
+      <div className="col-span-1  flex flex-wrap content-center">
+        <img src={logo} className="rounded-lg max-h-16 black mx-auto my-auto" />
       </div>
-      <div class="col-span-4">
-        <div class="text-lg">{title}</div>
-        <p class="my-2 text-md text-nearWhite">
+      <div className="col-span-4">
+        <div className="text-lg">{title}</div>
+        <p className="my-2 text-md text-nearWhite">
           {company}, {date}
         </p>
       </div>
@@ -24,19 +24,19 @@ export default function Experience() {
   });
 
   return (
-    <div class="bg-nearBlack text-white">
+    <div className="bg-nearBlack text-white">
       <div
         id="experience"
         ref={ref}
-        class={
+        className={
           inView
             ? "max-w-screen-xl mx-auto pb-20 lg:px-40 px-6 flex flex-col justify-center fade"
             : "max-w-screen-xl mx-auto pb-20 lg:px-40 px-6 flex flex-col justify-center invisible"
         }
       >
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg: gap-12 mt-4 xl:mt-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg: gap-12 mt-4 xl:mt-10">
           <div>
-            <div class={"text-4xl mt-4 xl:mt-10 pb-6 fade"}>Experience</div>
+            <div className={"text-4xl mt-4 xl:mt-10 pb-6 fade"}>Experience</div>
             <ExperienceCard
               title="Co-Founder, Product"
               company="Quantile"
@@ -69,7 +69,7 @@ export default function Experience() {
             />
           </div>
           <div>
-            <div class={"text-4xl mt-4 xl:mt-10 pb-6"}>Education</div>
+            <div className={"text-4xl mt-4 xl:mt-10 pb-6"}>Education</div>
             <ExperienceCard
               title="MBA, Strategy & Statistics"
               company="The Wharton School"

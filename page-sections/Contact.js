@@ -19,24 +19,24 @@ export default function VideoBar() {
   return (
     <div id="contact">
       {" "}
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:pl-40 min-h-70">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:pl-40 min-h-70">
         <div
           ref={ref}
-          class={
+          className={
             inView
               ? "lg:photo-text flex flex-col justify-center text-black px-6 lg:px-0 py-8 lg:py-24 lg:ml-auto fade"
               : "lg:photo-text flex flex-col justify-center text-black px-6 lg:px-0 py-8 lg:py-24 lg:ml-auto invisible"
           }
         >
-          <div class="text-4xl lg:text-title pr-12 text-black">Contact</div>
-          <div class="mt-12">
+          <div className="text-4xl lg:text-title pr-12 text-black">Contact</div>
+          <div className="mt-12">
             <a href="mailto:nthorlind@gmail.com" target="_blank">
-              <span class="text-link-responsive text-black font-light border-bottom font-light tracking-wide cursor-pointer">
+              <span className="text-link-responsive text-black font-light border-bottom font-light tracking-wide cursor-pointer">
                 nthorlind@gmail.com
               </span>
             </a>
           </div>
-          <div class="mt-12 flex flex-row space-x-10">
+          <div className="mt-12 flex flex-row space-x-10">
             <a href="https://github.com/ntlind" target="_blank">
               <FaGithub size={32} />
             </a>
@@ -49,7 +49,7 @@ export default function VideoBar() {
             <a
               target="_blank"
               onClick={onClick}
-              class="tracking-wide cursor-pointer"
+              className="tracking-wide cursor-pointer"
             >
               <FaCalendarPlus size={32} />
             </a>
@@ -57,12 +57,12 @@ export default function VideoBar() {
         </div>
         <div>
           <video
-            playsinline
+            playsInline
             autoPlay
-            autoBuffer
+            autobuffer
             loop
             muted
-            class="block object-cover w-full h-full overflow-hidden"
+            className="block object-cover w-full h-full overflow-hidden"
           >
             <source src="./video.mp4" type="video/mp4" />
           </video>

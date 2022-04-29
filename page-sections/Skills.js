@@ -20,14 +20,14 @@ const BorderLinearProgress = withStyles((theme) => ({
 
 function SkillCard({ title, progress }) {
   return (
-    <div class="grid grid-cols-4 gap-6 bg-transparent py-3">
-      <div class="col-span-2  flex flex-wrap content-center">
-        <div class="text-lg">{title}</div>
+    <div className="grid grid-cols-4 gap-6 bg-transparent py-3">
+      <div className="col-span-2  flex flex-wrap content-center">
+        <div className="text-lg">{title}</div>
       </div>
-      <div class="col-span-2 flex flex-col justify-center">
+      <div className="col-span-2 flex flex-col justify-center">
         <BorderLinearProgress variant="determinate" value={progress} />
       </div>
-      {/* <div class="col-span-1 flex flex-col justify-center font-light text-lightGrayText text-sm">
+      {/* <div className="col-span-1 flex flex-col justify-center font-light text-lightGrayText text-sm">
         {progress}%
       </div> */}
     </div>
@@ -36,11 +36,11 @@ function SkillCard({ title, progress }) {
 
 function TechCard({ image, progress }) {
   return (
-    <div class="grid grid-cols-4 gap-8 bg-transparent py-4 lg:py-6">
-      <div class="col-span-2  flex flex-wrap content-center">
-        <img src={image} class="filter-grayscale rounded-lg max-h-12" />{" "}
+    <div className="grid grid-cols-4 gap-8 bg-transparent py-4 lg:py-6">
+      <div className="col-span-2  flex flex-wrap content-center">
+        <img src={image} className="filter-grayscale rounded-lg max-h-12" />{" "}
       </div>
-      <div class="col-span-2 flex flex-col justify-center">
+      <div className="col-span-2 flex flex-col justify-center">
         <BorderLinearProgress variant="determinate" value={progress} />
       </div>
     </div>
@@ -54,20 +54,20 @@ export default function Skills() {
   });
 
   return (
-    <div class="bg-nearBlack text-white">
+    <div className="bg-nearBlack text-white">
       <div
         id="skills"
         ref={ref}
-        class={
+        className={
           inView
             ? "max-w-screen-xl	mx-auto pb-20 lg:px-40 px-6 flex flex-col justify-center fade"
             : "max-w-screen-xl	mx-auto pb-20 lg:px-40 px-6 flex flex-col justify-center invisible"
         }
       >
         {" "}
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg: gap-12 mt-4 xl:mt-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg: gap-12 mt-4 xl:mt-10">
           <div>
-            <div class={"text-4xl pb-6 fade"}>Back-End & ML</div>
+            <div className={"text-4xl pb-6 fade"}>Back-End & ML</div>
             <SkillCard title="Python" progress="100" />
             <SkillCard title="Spark" progress="96" />
             <SkillCard title="SQL" progress="95" />
@@ -75,7 +75,7 @@ export default function Skills() {
             <SkillCard title="GCP, AWS, and Azure" progress="68" />
           </div>
           <div>
-            <div class={"text-4xl pb-6 fade"}>Front-End</div>
+            <div className={"text-4xl pb-6 fade"}>Front-End</div>
             <SkillCard title="Django" progress="90" />
             <SkillCard title="HTML + CSS" progress="80" />
             <SkillCard title="React.js" progress="70" />

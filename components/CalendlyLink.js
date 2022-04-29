@@ -13,7 +13,7 @@ export default function CalendlyLink({
 
   return (
     <Link onClick={onClick} target="_blank" underline="none">
-      <span class={class_style}>{text}</span>
+      <span className={class_style}>{text}</span>
     </Link>
   );
 }

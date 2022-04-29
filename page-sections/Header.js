@@ -12,7 +12,7 @@ function ScrollButton({ text, section }) {
       smooth={true}
       duration={800}
       delay={10}
-      class="text-lightGrayText hover:text-black uppercase text-link-responsive font-light cursor-pointer"
+      className="text-lightGrayText hover:text-black uppercase text-link-responsive font-light cursor-pointer"
     >
       {text}
     </ScrollLink>
@@ -32,7 +32,7 @@ export default function Header() {
   });
 
   const rightLinks = (
-    <nav class="hidden md:flex space-x-10">
+    <nav className="hidden md:flex space-x-10">
       <ScrollButton text="About" section="about" />
       <ScrollButton text="Portfolio" section="portfolio" />
       <ScrollButton text="Services" section="services" />
@@ -43,17 +43,17 @@ export default function Header() {
   return (
     <div
       ref={ref}
-      class={
+      className={
         inView
           ? "relative bg-white mt-10 md:fade"
           : "relative bg-white mt-10 md:invisible"
       }
     >
-      <div class="max-w-screen-xl mx-auto	lg:px-40 px-6">
-        <div class="flex justify-between items-center border-gray-100 py-2 md:justify-start md:space-x-10">
-          <div class="flex justify-start lg:w-0 lg:flex-1">
+      <div className="max-w-screen-xl mx-auto	lg:px-40 px-6">
+        <div className="flex justify-between items-center border-gray-100 py-2 md:justify-start md:space-x-10">
+          <div className="flex justify-start lg:w-0 lg:flex-1">
             <a href="#">
-              <span class="text-3xl font-medium">nick lind</span>
+              <span className="text-3xl font-medium">nick lind</span>
             </a>
           </div>
           <button type="button" className="md:hidden" onClick={handleClick}>
@@ -87,28 +87,28 @@ export default function Header() {
             <a
               href="/#about"
               onClick={handleClick}
-              class="text-gray relative text-2xl hover:text-black uppercase font-light"
+              className="text-gray relative text-2xl hover:text-black uppercase font-light"
             >
               About
             </a>
             <a
               href="/#portfolio"
               onClick={handleClick}
-              class="text-gray relative text-2xl hover:text-black uppercase font-light"
+              className="text-gray relative text-2xl hover:text-black uppercase font-light"
             >
               Portfolio
             </a>
             <a
               href="/#services"
               onClick={handleClick}
-              class="text-gray relative text-2xl hover:text-black uppercase font-light"
+              className="text-gray relative text-2xl hover:text-black uppercase font-light"
             >
               Services
             </a>
             <a
               href="/#contact"
               onClick={handleClick}
-              class="text-gray relative text-2xl hover:text-black uppercase font-light"
+              className="text-gray relative text-2xl hover:text-black uppercase font-light"
             >
               Contact
             </a>
