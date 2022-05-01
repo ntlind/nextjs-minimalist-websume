@@ -1,5 +1,4 @@
 import React from "react";
-import { useInView } from "react-intersection-observer";
 
 import LinearProgress from "@material-ui/core/LinearProgress";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
@@ -24,12 +23,9 @@ function SkillCard({ title, progress }) {
       <div className="col-span-2  flex flex-wrap content-center">
         <div className="text-lg">{title}</div>
       </div>
-      <div className="col-span-2 flex flex-col justify-center">
+      <div className="col-span-2 flex flex-col justify-center relative">
         <BorderLinearProgress variant="determinate" value={progress} />
       </div>
-      {/* <div className="col-span-1 flex flex-col justify-center font-light text-lightGrayText text-sm">
-        {progress}%
-      </div> */}
     </div>
   );
 }
@@ -48,39 +44,29 @@ function TechCard({ image, progress }) {
 }
 
 export default function Skills() {
-  const { ref, inView, entry } = useInView({
-    /* Optional options */
-    threshold: 0,
-  });
-
   return (
-    <div className="bg-nearBlack text-white">
+    <div className="pt-16 bg-nearBlack text-white">
       <div
         id="skills"
-        ref={ref}
-        className={
-          inView
-            ? "max-w-screen-xl	mx-auto pb-20 lg:px-40 px-6 flex flex-col justify-center fade"
-            : "max-w-screen-xl	mx-auto pb-20 lg:px-40 px-6 flex flex-col justify-center invisible"
-        }
+        className="max-w-screen-xl	mx-auto flex flex-col justify-center "
       >
         {" "}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg: gap-12 mt-4 xl:mt-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 mt-4 xl:mt-10">
           <div>
-            <div className={"text-4xl pb-6 fade"}>Back-End & ML</div>
-            <SkillCard title="Python" progress="100" />
-            <SkillCard title="Spark" progress="96" />
-            <SkillCard title="SQL" progress="95" />
-            <SkillCard title="Scala" progress="75" />
-            <SkillCard title="GCP, AWS, and Azure" progress="68" />
+            <div className={"text-4xl pb-6"}>Back-End & ML</div>
+            <SkillCard title="Python" progress={100} />
+            <SkillCard title="Spark" progress={96} />
+            <SkillCard title="SQL" progress={95} />
+            <SkillCard title="Scala" progress={75} />
+            <SkillCard title="GCP, AWS, and Azure" progress={68} />
           </div>
           <div>
-            <div className={"text-4xl pb-6 fade"}>Front-End</div>
-            <SkillCard title="Django" progress="90" />
-            <SkillCard title="HTML + CSS" progress="80" />
-            <SkillCard title="React.js" progress="70" />
-            <SkillCard title="Celery + RPC" progress="70" />
-            <SkillCard title="jQuery" progress="60" />
+            <div className={"text-4xl pb-6"}>Front-End</div>
+            <SkillCard title="Django" progress={90} />
+            <SkillCard title="HTML + CSS" progress={80} />
+            <SkillCard title="React.js" progress={70} />
+            <SkillCard title="Celery + RPC" progress={70} />
+            <SkillCard title="jQuery" progress={60} />
           </div>
         </div>
       </div>
